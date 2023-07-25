@@ -19,8 +19,8 @@ class _MeeduPlayerFullscreenPageState extends State<MeeduPlayerFullscreenPage> {
     return BottomDrawer(
       header: Container(),
       body: widget.controller.bottomDrawer ?? Container(),
-      headerHeight: 10,
-      drawerHeight: 180,
+      headerHeight: 30,
+      drawerHeight: 200,
       color: Colors.transparent,
       controller: widget.controller.bottomDrawerController,
       boxShadow: [
