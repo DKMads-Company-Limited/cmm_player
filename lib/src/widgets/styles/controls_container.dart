@@ -368,31 +368,31 @@ class _ControlsContainerState extends State<ControlsContainer> {
           ),
         ),
       ),
-      RxBuilder(
-        //observables: [_.showSwipeDuration],
-        //observables: [_.swipeDuration],
-        (__) => Align(
-          alignment: Alignment.center,
-          child: AnimatedOpacity(
-            duration: _.durations.videoFitOverlayDuration,
-            opacity: _.videoFitChanged.value ? 1 : 0,
-            child: Visibility(
-              visible: _.videoFitChanged.value,
-              child: Container(
-                color: Colors.grey[900],
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Text(
-                    _.videoFit.value.name[0].toUpperCase() +
-                        _.videoFit.value.name.substring(1),
-                    style: const TextStyle(color: Colors.white, fontSize: 16),
-                  ),
-                ),
-              ),
-            ),
-          ),
-        ),
-      ),
+      // RxBuilder(
+      //   //observables: [_.showSwipeDuration],
+      //   //observables: [_.swipeDuration],
+      //   (__) => Align(
+      //     alignment: Alignment.center,
+      //     child: AnimatedOpacity(
+      //       duration: _.durations.videoFitOverlayDuration,
+      //       opacity: _.videoFitChanged.value ? 1 : 0,
+      //       child: Visibility(
+      //         visible: _.videoFitChanged.value,
+      //         child: Container(
+      //           color: Colors.grey[900],
+      //           child: Padding(
+      //             padding: const EdgeInsets.all(8.0),
+      //             child: Text(
+      //               _.videoFit.value.name[0].toUpperCase() +
+      //                   _.videoFit.value.name.substring(1),
+      //               style: const TextStyle(color: Colors.white, fontSize: 16),
+      //             ),
+      //           ),
+      //         ),
+      //       ),
+      //     ),
+      //   ),
+      // ),
       RxBuilder(
           //observables: [_.showControls],
           (__) {
